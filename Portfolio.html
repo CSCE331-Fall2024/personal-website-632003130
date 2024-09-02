@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="css/portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <div class="home-icon">
+        <a href="/index.html" >
+            <img src="/img/home.png">
+        </a>
+    </div>
+    <div class="portfolio-container">
+        <h1>Portfolio</h1>
+        <div class="toggle-container">
+            <button id="toggleViewButton" onclick="toggleView()">Switch to List View</button>
+        </div>
+        <script>
+            function toggleView() {
+                const container = document.querySelector('.portfolio-container');
+                const toggleButton = document.querySelector('#toggleViewButton');
+                
+                if (container.classList.contains('grid-view')) {
+                    container.classList.remove('grid-view');
+                    container.classList.add('list-view');
+                    toggleButton.innerText = 'Switch to Grid View';
+                } else {
+                    container.classList.remove('list-view');
+                    container.classList.add('grid-view');
+                    toggleButton.innerText = 'Switch to List View';
+                }
+            }
+        </script>
+           
+        <div class="projects-grid">
+            <div class="grid-item">
+                <h3>Wordle w/JavaFX</h3>
+                <p>This project is an implementation of the famous game Wordle, using JavaFX, and specifically sceneBuilder.</p>
+                <a href="https://github.com/Skanda-Nagaraja/CSCE314-Wordle" target="_blank">LINK</a>
+            </div>
+            <div class="grid-item">
+                <h3>Stock Vibes</h3>
+                
+                <p>The site allows the user to input multiple stock tickers of their choice. It then runs a query to Reddit, a network of online communities, and parses through posts for relevant content. This content is then ran through a sentiment analysis model, leaving us with data we used to generate a rating for each stock. An appealing graph of the stock's previous closing prices along with a company description is also provided.</p>
+                <a href="https://github.com/Skanda-Nagaraja/StockVibes" target="_blank">LINK</a>
+            </div>
+            <div class="grid-item">
+                <h3>SQL Query Generator</h3>
+                <p>The SQL Query Generator is a web-based application designed to simplify the process of creating SQL queries. Leveraging the power of OpenAI's GPT API, this application allows users to generate complex SQL queries through natural language inputs. By integrating GPT-4, the application translates user-defined descriptions or requirements into well-formed SQL queries, thereby reducing the time and effort required to write queries manually, especially for those who may not be proficient in SQL.</p>
+                <a href="https://github.com/Skanda-Nagaraja/SQLquery-Site" target="_blank">LINK</a>
+            </div>
+        </div>
+    </div>
+    <div class = "course-list">
+        <h2>Notable Coursework</h2>
+        <ol>
+            <li>Data Structure</li>
+            <br>
+            <li>Software Engineering</li>
+            <br>
+            <li>Machine Learning</li>
+            <br>
+            <li>Discrete Mathematics </li>
+            <br>
+            <li>Linear Algebra Structure</li>
+        </ol>
+    </div>
+    <div class="social-box">
+        <a href="https://github.com/Skanda-Nagaraja" target="_blank">
+            <img src="/img/github-mark.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/skanda-nagaraja-84b9471a6/" target="_blank">
+            <img src="/img/linkedin.png" alt="Twitter">
+        </a>
+    </div>
+</body>
+</html>
