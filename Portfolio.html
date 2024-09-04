@@ -17,22 +17,7 @@
         <div class="toggle-container">
             <button id="toggleViewButton" onclick="toggleView()">Switch to List View</button>
         </div>
-        <script>
-            function toggleView() {
-                const container = document.querySelector('.portfolio-container');
-                const toggleButton = document.querySelector('#toggleViewButton');
-                
-                if (container.classList.contains('grid-view')) {
-                    container.classList.remove('grid-view');
-                    container.classList.add('list-view');
-                    toggleButton.innerText = 'Switch to Grid View';
-                } else {
-                    container.classList.remove('list-view');
-                    container.classList.add('grid-view');
-                    toggleButton.innerText = 'Switch to List View';
-                }
-            }
-        </script>
+        
            
         <div class="projects-grid">
             <div class="grid-item">
