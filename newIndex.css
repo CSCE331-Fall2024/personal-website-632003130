@@ -1,0 +1,156 @@
+.navBar {
+    padding: 40px 30px; 
+    border-bottom: 2px solid #2D232E; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; 
+    height: 100%; 
+    background-color: #BFA89E; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navBar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-family: "Monospace", "Copperplate";
+}
+
+.navBar ul li {
+    margin-bottom: 40px; 
+}
+
+.navBar ul li a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #283044; 
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.6s, color 0.6s;
+}
+
+.navBar ul li a:hover {
+    background-color: #2D232E; 
+    color: #F1F0EA; 
+}
+
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 240px; 
+    padding-top: 50px; 
+}
+
+
+.image-container img {
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.text-container {
+    max-width: 600px; 
+    text-align: center; 
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.portfolio-container {
+    max-width: 1000px;
+    margin: auto auto;
+    position: absolute;
+    top: 22%;
+    left: 30%;
+    padding: 20px;
+    background-color: #78A1BB;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.text-container p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projects-grid {
+    display: grid;
+}
+
+.grid-item p{
+    padding-left: 300px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container-qual {
+    
+    width: 400px;
+    height: 400px;
+    margin: auto auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    padding: 20px;
+    background-color: #78A1BB;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+.professional-interests, .technical-skills {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resume-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resume-box a {
+    text-decoration: none;
+    color: #283044; 
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #BFA89E;
+    transition: background-color 0.6s, color 0.6s;
+}
+.resume-preview {
+    width: 50%; /* Width for resume preview */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: auto; /* Automatically center */
+}
+
+.resume-preview iframe {
+    width: 100%; /* Full width inside the resume-preview container */
+    height: 800px; /* Adjust height for larger preview */
+    border: none; /* Remove iframe border */
+}
