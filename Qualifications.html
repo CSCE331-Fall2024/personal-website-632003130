@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualifications</title>
-    <link href="newIndex.css" rel="stylesheet">
+    <link id="style1" rel="stylesheet" href="index.css" />
+    <link id="style2" rel="stylesheet" href="newIndex.css" disabled>
+    <script src="changeStyle.js"></script>
+
+
+
 
    
 </head>
 <body>
-    <div class="container-qual">
-        <h2>Qualifications</h2>
+  
         <div class="navBar">
             <ul>
                 <li><a href="index.html">Intro</a></li>
@@ -18,39 +22,42 @@
                 <li><a href="Qualifications.html">Qualifications</a></li>
                 <li><a href="Service.html">Service</a></li>
                 <li><a href="AIGenerated.html">AI Generated</a></li>
+                <li><button id="change-style">Change Style</button></li>
             </ul>
         </div>
         <br>
         <br>
 
         <br>
-    
-        <div class="professional-interests">
-            <div class="section-title">Professional Interests</div>
-            <ul>
-                <li>Machine Learning</li>
-                <li>Deep learning</li>
-                <li>Management Consulting</li>
-            </ul>
-        </div>
-    
-        <div class="technical-skills">
-            <div class="section-title">Technical Skills</div>
-            <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Python</li>
-                <li>C++</li>
-                <li>MongoDB</li>
-            </ul>
-        </div>
-    
-       
-  
-            </div><div class="resume-preview">
-                <iframe src="./SkandaNagarajaResume (1).pdf" width="100%" height="600px"></iframe>
+        <div class="container-qual">
+            <h2>Qualifications</h2>
+        <div class="grid-container">
+            
+                <div class="professional-interests">
+                    <div class="section-title">Professional Interests</div>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Management Consulting</li>
+                    </ul>
+                </div>
+        
+                <div class="technical-skills">
+                    <div class="section-title">Technical Skills</div>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
             </div>
-       
-    </div>
+        
+            <div class="resume-preview">
+                <iframe src="./SNUpdated.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+        
 </body>
 </html>

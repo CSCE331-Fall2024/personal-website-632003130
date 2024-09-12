@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="newIndex.css" rel="stylesheet">
+    <link id="style1" rel="stylesheet" href="index.css" />
+    <link id="style2" rel="stylesheet" href="newIndex.css" disabled>
+    <script src="changeStyle.js"></script>
+
+
 </head>
 <body>
-
-    <div class="portfolio-container">
+    
         <div class="navBar">
             <ul>
                 <li><a href="index.html">Intro</a></li>
@@ -16,10 +19,11 @@
                 <li><a href="Qualifications.html">Qualifications</a></li>
                 <li><a href="Service.html">Service</a></li>
                 <li><a href="AIGenerated.html">AI Generated</a></li>
+                <li><button id="change-style">Change Style</button></li>
             </ul>
         </div>
         
-    
+        <div class="portfolio-container">
         <div class="projects-grid">
             <div class="grid-item">
                 <h3>Wordle w/JavaFX</h3>
@@ -44,8 +48,9 @@
     </div>
     <div class = "course-list">
         <h2>Notable Coursework</h2>
+        <p><a href=" https://www.instagram.com/skandanaga/">formal course descriptions</a></p>
         <ol>
-            <li>Data Structure</li>
+            <li>Data Structures</li>
             <br>
             <li>Software Engineering</li>
             <br>
@@ -53,16 +58,26 @@
             <br>
             <li>Discrete Mathematics </li>
             <br>
-            <li>Linear Algebra Structure</li>
+            <li>Linear Algebra</li>
+            <br>
+            <li>Database Systems</li>
         </ol>
     </div>
     <div class="social-box">
         <a href="https://github.com/Skanda-Nagaraja" target="_blank">
-            <img src="/github-mark.png" alt="Facebook">
+            <img src="./github-mark.png" alt="Facebook">
         </a>
         <a href="https://www.linkedin.com/in/skanda-nagaraja-84b9471a6/" target="_blank">
-            <img src="/inkedin.png" alt="Twitter">
+            <img src="./linkedin.png" alt="Twitter">
         </a>
+        <a href="https://devpost.com/s632003130?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">
+            <img src="./devpost-seeklogo.svg" alt="Twitter">
+        </a>
+        <a href=" https://www.instagram.com/skandanaga/" target="_blank">
+            <img src="./instagram-logo.png" alt="Twitter">
+        </a>
+        
+       
     </div>
 </body>
 </html>

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="newIndex.css" rel="stylesheet">
+    <link id="style1" rel="stylesheet" href="index.css" />
+    <link id="style2" rel="stylesheet" href="newIndex.css" disabled>
+    <script src="changeStyle.js"></script>
+
+
+
 </head>
 <body>
     <div class="navBar">
@@ -14,11 +19,12 @@
             <li><a href="Qualifications.html">Qualifications</a></li>
             <li><a href="Service.html">Service</a></li>
             <li><a href="AIGenerated.html">AI Generated</a></li>
+            <li><button id="change-style">Change Style</button></li>
         </ul>
     </div>
     <div id="roadmap-page" class="roadmap-container">
         <div class="roadmap-textbox">
-            <p>Generate a roadmap to outline logical career milestones within the next 10 years</p>
+            <p>Prompt: Generate a roadmap to outline logical career milestones within the next 10 years</p>
         </div>
         <h2>My Career Roadmap</h2>
         <div class="roadmap">
